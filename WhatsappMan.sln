@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatsappMan", "WhatsappMan\WhatsappMan.csproj", "{68F99464-25AD-4C63-945E-91A0D95859CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68F99464-25AD-4C63-945E-91A0D95859CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68F99464-25AD-4C63-945E-91A0D95859CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68F99464-25AD-4C63-945E-91A0D95859CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68F99464-25AD-4C63-945E-91A0D95859CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {347D8B10-19D5-4C8C-BFB6-2DB9D834ADF6}
+	EndGlobalSection
+EndGlobal
