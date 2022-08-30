@@ -106,7 +106,7 @@ namespace WhatsappMan
 
         private void logekle(string log)
         {
-            this.Invoke(new MethodInvoker(delegate { txt_console.Text += log; txt_console.ScrollToCaret(); }));
+            this.Invoke(new MethodInvoker(delegate { txt_console.Text += log; txt_console.SelectionStart = txt_console.TextLength; txt_console.ScrollToCaret(); }));
         }
 
         private void durumcubugu(decimal biten, decimal toplam)
@@ -135,8 +135,8 @@ namespace WhatsappMan
 
             try
             {
-                var wait = new WebDriverWait(driver, new TimeSpan(0, 0, 30));
-                var element = wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.XPath("/html/body/div[1]/div/div/div[4]/div/div/div[2]/div[1]/h1")));
+                var wait5min = new WebDriverWait(driver, new TimeSpan(0, 5, 0));
+                var element = wait5min.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.XPath("/html/body/div[1]/div/div/div[4]/div/div/div[2]/div[1]/h1")));
 
                 int total = 0;
                 int sent = 0;
@@ -154,6 +154,7 @@ namespace WhatsappMan
                     {
                         try
                         {
+                            var wait = new WebDriverWait(driver, new TimeSpan(0, 1, 0));
                             driver.Url = "https://web.whatsapp.com/send?phone=" + line + "&text&type=phone_number&app_absent=0";
 
                             wait.Until(SeleniumExtras.WaitHelpers.ExpectedConditions.ElementIsVisible(By.XPath("/html/body/div[1]/div/div/div[4]/div/footer/div[1]/div/span[2]/div/div[2]/div[1]/div/div[1]/p")));

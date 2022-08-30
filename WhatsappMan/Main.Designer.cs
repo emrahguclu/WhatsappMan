@@ -38,20 +38,20 @@
             this.lbl_gonderilecekdosyayolu = new System.Windows.Forms.Label();
             this.lbl_telefonnumaralari = new System.Windows.Forms.Label();
             this.grp_gonderimbilgileri = new System.Windows.Forms.GroupBox();
+            this.beklemesuresi = new System.Windows.Forms.NumericUpDown();
+            this.paketadeti = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_baslat = new System.Windows.Forms.Button();
             this.arkaplaniscisi = new System.ComponentModel.BackgroundWorker();
             this.txt_console = new System.Windows.Forms.TextBox();
-            this.paketadeti = new System.Windows.Forms.NumericUpDown();
-            this.beklemesuresi = new System.Windows.Forms.NumericUpDown();
             this.statusband = new System.Windows.Forms.StatusStrip();
             this.toolStripProgressBar = new System.Windows.Forms.ToolStripProgressBar();
             this.btn_logudisaaktar = new System.Windows.Forms.Button();
             this.logdosyasikaydet = new System.Windows.Forms.SaveFileDialog();
             this.grp_gonderimbilgileri.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.paketadeti)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.beklemesuresi)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.paketadeti)).BeginInit();
             this.statusband.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -135,6 +135,40 @@
             this.grp_gonderimbilgileri.TabStop = false;
             this.grp_gonderimbilgileri.Text = "Gönderim Bilgileri";
             // 
+            // beklemesuresi
+            // 
+            this.beklemesuresi.Location = new System.Drawing.Point(154, 171);
+            this.beklemesuresi.Maximum = new decimal(new int[] {
+            60,
+            0,
+            0,
+            0});
+            this.beklemesuresi.Name = "beklemesuresi";
+            this.beklemesuresi.Size = new System.Drawing.Size(120, 20);
+            this.beklemesuresi.TabIndex = 5;
+            this.beklemesuresi.Value = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            // 
+            // paketadeti
+            // 
+            this.paketadeti.Location = new System.Drawing.Point(16, 171);
+            this.paketadeti.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.paketadeti.Name = "paketadeti";
+            this.paketadeti.Size = new System.Drawing.Size(120, 20);
+            this.paketadeti.TabIndex = 4;
+            this.paketadeti.Value = new decimal(new int[] {
+            200,
+            0,
+            0,
+            0});
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -173,42 +207,9 @@
             this.txt_console.Multiline = true;
             this.txt_console.Name = "txt_console";
             this.txt_console.ReadOnly = true;
+            this.txt_console.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.txt_console.Size = new System.Drawing.Size(539, 176);
             this.txt_console.TabIndex = 8;
-            // 
-            // paketadeti
-            // 
-            this.paketadeti.Location = new System.Drawing.Point(16, 171);
-            this.paketadeti.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.paketadeti.Name = "paketadeti";
-            this.paketadeti.Size = new System.Drawing.Size(120, 20);
-            this.paketadeti.TabIndex = 4;
-            this.paketadeti.Value = new decimal(new int[] {
-            200,
-            0,
-            0,
-            0});
-            // 
-            // beklemesuresi
-            // 
-            this.beklemesuresi.Location = new System.Drawing.Point(154, 171);
-            this.beklemesuresi.Maximum = new decimal(new int[] {
-            60,
-            0,
-            0,
-            0});
-            this.beklemesuresi.Name = "beklemesuresi";
-            this.beklemesuresi.Size = new System.Drawing.Size(120, 20);
-            this.beklemesuresi.TabIndex = 5;
-            this.beklemesuresi.Value = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
             // 
             // statusband
             // 
@@ -262,8 +263,8 @@
             this.Text = "WhatsappMan";
             this.grp_gonderimbilgileri.ResumeLayout(false);
             this.grp_gonderimbilgileri.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.paketadeti)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.beklemesuresi)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.paketadeti)).EndInit();
             this.statusband.ResumeLayout(false);
             this.statusband.PerformLayout();
             this.ResumeLayout(false);

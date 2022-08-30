@@ -123,7 +123,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="dm.ico" />
-    <Content Include="Resimler\WhatsappMan.PNG" />
+    <Content Include="Resimler\WhatsappMan.jpg" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
